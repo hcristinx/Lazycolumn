@@ -1,0 +1,11 @@
+[2025-01-24 12:00:00]
+Description: Initializing project guidelines and logging.
+Prompt: use .guidelines for all requests
+
+[2025-01-24 12:05:00]
+Description: Creating a Material 3 component catalog app with navigation.
+Prompt: Estoy desarrollando una aplicación en Android Studio usando Kotlin y Jetpack Compose... [full prompt omitted]
+
+[2025-01-24 12:15:00]
+Description: Fixing build error related to Gradle cache corruption and updating dependencies.
+Prompt: the file does not run, fix it please. The errors that appear are of this kind: The contents of the immutable workspace 'C:\Users\Cris\.gradle\caches\...' have been modified.
