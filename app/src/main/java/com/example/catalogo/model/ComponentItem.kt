@@ -5,5 +5,6 @@ data class ComponentItem(
     val id: String,
     val name: String,
     val subtitle: String,
-    val description: String
+    val description: String,
+    val imageRes: Int
 )

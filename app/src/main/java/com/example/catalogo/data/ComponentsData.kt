@@ -1,57 +1,67 @@
 package com.example.catalogo.data
 
+import com.example.catalogo.R
 import com.example.catalogo.model.ComponentItem
+
 
 // IA generated: Static list of Material 3 components to be displayed in the app
 object ComponentsData {
     val items = listOf(
         ComponentItem(
-            id = "appbars",
-            name = "App Bars",
-            subtitle = "Top and bottom navigation bars",
-            description = "App bars provide content and actions at the top and bottom of a screen."
+            id = "dietas_balanceadas",
+            name = "dietas balanceadas",
+            subtitle = "La nutrición es difícil siendo foráneo, ¡consulta ideas y consejos para nutrirte!",
+            description = "nutrición para ser VIP",
+            imageRes = R.drawable.plato_bien_comer
         ),
         ComponentItem(
-            id = "badges",
-            name = "Badges",
-            subtitle = "Notification indicators",
-            description = "Badges are used to convey dynamic information, such as counts or status."
+            id = "Fun_spots",
+            name = "Fun spots",
+            subtitle = "¡Abre el mapa y haz planes para este jueves!",
+            description = "Mapa para ver buenos lugares para pasar el jueves",
+            imageRes = R.drawable.ebrio
         ),
         ComponentItem(
-            id = "bottomsheet",
-            name = "Bottom Sheet",
-            subtitle = "Surface anchored to bottom",
-            description = "Bottom sheets are surfaces containing supplementary content that are anchored to the bottom of the screen."
+            id = "Finanzas_desde_0",
+            name = "Finanzas desde 0",
+            subtitle = "Las finanzas como foráneo son un reto, ¡nosotros de ayudamos!",
+            description = "Consejos financieros para ser VIP",
+            imageRes = R.drawable.finanzas
         ),
         ComponentItem(
-            id = "buttons",
-            name = "Buttons",
-            subtitle = "Interactive elements",
-            description = "Buttons help people take action, such as sending an email, sharing a document, or liking a comment."
+            id = "Recetas",
+            name = "Recetas",
+            subtitle = "Recetas rápidas y económicas",
+            description = "Recetas para ser VIP",
+            imageRes = R.drawable.recetas
         ),
         ComponentItem(
-            id = "card",
-            name = "Card",
-            subtitle = "Containment component",
-            description = "Cards contain content and actions about a single subject."
+            id = "Vida_social",
+            name = "Vida social",
+            subtitle = "¡Conoce gente en nuestro foro!",
+            description = "Conocer gente nunca está demás (a veces sí)",
+            imageRes = R.drawable.socializar
         ),
         ComponentItem(
-            id = "carousel",
-            name = "Carousel",
-            subtitle = "Horizontal scrolling items",
-            description = "A carousel displays a list of content in a horizontally scrollable way."
+            id = "Tiendas_de_conveniencia",
+            name = "Tiendas_de_conveniencia",
+            subtitle = "¿No sabes dónde hacer despensa? No te preocupes, te ayudamos.",
+            description = "Mapa para tiendas de conveniencia",
+            imageRes = R.drawable.tienda_de_conveniencia
         ),
         ComponentItem(
-            id = "chip",
-            name = "Chip",
-            subtitle = "Compact interactive elements",
-            description = "Chips help people enter information, make selections, filter content, or trigger actions."
+            id = "Life_coach",
+            name = "Life coach",
+            subtitle = "Nuestra inteligencia artificial te puede ayudar con tu planeación de vida",
+            description = "Ojala todos tuviéramos esto.",
+            imageRes = R.drawable.coach
         ),
         ComponentItem(
-            id = "dialog",
-            name = "Dialog",
-            subtitle = "Focused information or actions",
-            description = "Dialogs provide important prompts in a user flow."
+            id = "Atención_al_cliente",
+            name = "Atención al cliente",
+            subtitle = "¿Necesitas ayuda con algo? Lo resolvemos.",
+            description = "Atención al cliente para ser VIP",
+            imageRes = R.drawable.atencion_al_cliente
         )
     )
 }

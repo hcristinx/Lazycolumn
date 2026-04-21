@@ -1,5 +1,6 @@
 package com.example.catalogo.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -18,12 +19,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.catalogo.R
 import com.example.catalogo.data.ComponentsData
 import com.example.catalogo.model.ComponentItem
+
+// IA generated: Font family definition using a custom TTF file
+val customFont = FontFamily(
+    Font(R.font.rumbloon)
+)
 
 // IA generated: Main screen showing the list of Material 3 components
 @OptIn(ExperimentalMaterial3Api::class)
@@ -32,7 +42,12 @@ fun ComponentListScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Componentes M3") },
+                title = {
+                    Text(
+                        text = "Foraneocore",
+                        fontFamily = customFont
+                    )
+                },
                 actions = {
                     BadgedBox(
                         badge = { Badge { Text("3") } },
@@ -85,23 +100,21 @@ fun ComponentListScreen(navController: NavController) {
 fun ComponentListItem(item: ComponentItem, onClick: () -> Unit) {
     ListItem(
         modifier = Modifier.clickable { onClick() },
+
         headlineContent = { Text(item.name) },
+
         supportingContent = { Text(item.subtitle) },
+
         leadingContent = {
-            Box(
+            Image(
+                painter = painterResource(id = item.imageRes),
+                contentDescription = item.name,
                 modifier = Modifier
-                    .size(40.dp)
+                    .size(56.dp)
                     .clip(CircleShape)
-                    .background(MaterialTheme.colorScheme.primaryContainer),
-                contentAlignment = Alignment.Center
-            ) {
-                Text(
-                    text = item.name.take(1),
-                    color = MaterialTheme.colorScheme.onPrimaryContainer,
-                    style = MaterialTheme.typography.titleMedium
-                )
-            }
+            )
         },
+
         trailingContent = {
             Icon(Icons.Default.KeyboardArrowRight, contentDescription = "Ver detalle")
         }
